@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="">
+    <title>CRUDScope </title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion de tarea</h1>
+        <p>Es un sistema para gestion de tu tiempo ^0^
+            <abbr title="crear, leer, actializar y eliminae">CRUD</abbr>
+            de manera secilla
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#crear">crear</a></li>
+            <li><a href="#listado">Listado</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="crear">
+            <h2>crear tarea</h2>
+
+            <p> En esta seccion podras registrar nueva tarea
+                <strong>titulo</strong>
+                <em>descripcion</em>
+                <u>fecha limite</u>
+            </p>
+        </section>
+    </main>
+
+    <div>
+        <form>
+            <label>
+                nombre de la tarea
+                <input type="text" placeholder="Ej: compra frutas">
+            </label><br><br>
+
+            <label>
+                Prioridad:
+                <input type="number" min="1" max="5">
+            </label><br><br>
+
+            <label>
+                fecha
+                <input type="date">
+            </label><br><br>
+
+            <label>
+                descripcion
+                <textarea placeholder="Detalles de la tarea..."></textarea>
+            </label><br><br>
+
+            <button type="submit"> Crea tarea</button>
+        </form>
+    </div>
+
+    <p>Recuerda que una tarea <u>bien descrita</u> ayuda a mantener orden en tu planificación diaria. También
+        puedes usar <mark>marcas visuales</mark> para resaltar lo importante.</p>
+    </section>
+
+    <section id="listado">
+        <h2>Listado de tarea</h2>
+        <p>Aqui se muestra las tarea que tienes registrada</p>
+
+        <table border="1" width="70%">
+            <tr>
+                <th>Tarea</th>
+                <th>Prioridad</th>
+                <th>fecha</th>
+                <th>Acciones</th>
+            </tr>
+
+            <tr>
+                <td>Estudia HTML</td>
+                <td>3</td>
+                <td><time datetime="2025-09-10"> 2025 sep 10 </time>
+                <td>
+                    <button>Actualizar</button>
+                    <button>Eliminar</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Organizar archivo</td>
+                <td>2</td>
+                <td><time datetime="2025-09-20">2025-09-20</time></td>
+                <td>
+                    <button>Actualizar</button>
+                    <button>Eliminar</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="multimedia">
+        <h2>Multimedia del sistema</h2>
+        <p>En esta sección se incluyen elementos de audio, video e imagen.</p>
+
+        <img src="1.jpg" alt="Mi bb (┬┬﹏┬┬)">
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="meme.mp3" type="audio/mp3">
+            Tu navegador no soporta el audio.
+
+            <h3>video</h3>
+            <video width="320" height="240" controls>
+                <source src="1.mp4" type="video/mp4">
+                Tu navegador no soporta el video
+            </video>
+    </section>
+    </main>
+
+    <section id="acerca">
+        <h2>Acerca del sistema</h2>
+        <article>
+            <h3>descripcion general</h3>
+            <p>Este proyecto está diseñado para practicar etiquetas semánticas como <strong>section, article,
+                    aside</strong> y también etiquetas poco comunes como <em>abbr</em>, <em>time</em> y <em>base</em>.
+            </p>
+        </article>
+
+        <aside>
+            <h3>infomacion extra</h3>
+            <p>Tip: organiza tus secciones usando HTML semántico para mejorar la accesibilidad.</p>
+
+        </aside>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 – Proyecto académico CRUDScope</p>
+
+        <address>
+            Creado por: Val
+        </address>
+    </footer>
+
+
+</body>
+
+</html
